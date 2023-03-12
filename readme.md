@@ -1,4 +1,4 @@
-# JS array methods
+## JS array methods
 <details>
   
 <summary>srcs:</summary>
@@ -25,7 +25,7 @@ property sets or returns the number of elements in an array
 **arr[arr.length-1]**   
 get elm and get the last element (or you can get elm from the end this way)
 
-**[arr.at](https://github.com/atapas/js-array-at-method)**   
+**[arr.at(-1)](https://github.com/atapas/js-array-at-method)**   
 new method allows to access elemnts w negative from the end of arr
 
 **array[Indx][NstdIndx]**  
@@ -45,7 +45,7 @@ swap elements w destructuring  assignment
 
 <br>
 
-## Create/Copy/Modify an Arryay:
+### Create/Copy/Modify an Arryay:
 
 **const var = [el1, el2, el3]**  
 literal syntax  
@@ -82,7 +82,7 @@ merge two arays using spread operator
 
 <br>
 
-## Add/Delete/Update Elements:  
+### Add/Delete/Update Elements:  
 
 **.push(el)** | **.pop(el)** | **.unshift(el)** | **.shift(el)**  
 insert/delete elements in/from the array  
@@ -91,14 +91,14 @@ insert/delete elements in/from the array
 reverses the elements' positions! 
 (mutate the original array!) 
 
-**[.sort](https://github.com/atapas/js-array-sorting)**(comparator-fn)**  
+**[.sort](https://github.com/atapas/js-array-sorting)(comparator-fn)**  
 by default converts elms into strs and compare them based on UTF-16 code units vals 
 default sort is ascending  
 method accepts an optional comparator functions:  
 `numbers.sort((a,b)=>(a-b)); //ascending coparator`   
 `numbers.sort((a,b)=>(b-a)); //descending comparator`  
 
-**[.fill](https://github.com/atapas/array-fill-color-cards)**(*value, start, end*)**  
+**[.fill](https://github.com/atapas/array-fill-color-cards)(*value, start, end*)**  
 fill elemts of arrray w static vals  
 `const colors =['red','blue','green'];`   
 `colors.fill('pink',1,3); // ["red", "pink", "pink"]`  
@@ -140,7 +140,7 @@ The splice() method returns an array with the deleted element, bob.
 
 <br>
 
-## Iterator methods  
+### Iterator methods  
 *All the array iterator methods take a function as an argument. You need to specify the logic to iterate and apply in that function.*  
 **for** elm **of** arr  
 **for(){}**  
@@ -158,7 +158,7 @@ Returns a Array Iteration Object, containing the keys of the original array
 
 <br>
 
-## TRANSFORMATORS: filter, map, reduce
+### TRANSFORMATORS: filter, map, reduce
 
 **.filter()**  
 creates a new *shallow copy* of the arr w all the els that satisfies the condition mentioned in the function  
